@@ -32,6 +32,7 @@ jobs:
           git submodule update --init components/esp32-camera
           git submodule update --init components/esp-nn
       - name: Get Cache Keys
+      
         # later get this like this: git ls-remote --heads https://github.com/espressif/esp-idf
         # this commit is hard-coded in micropython/tools/ci.sh
         run: |
@@ -53,7 +54,7 @@ jobs:
           source ./micropython/tools/ci.sh && ci_esp32_idf44_setup
       - name: Cache tflm
         id: cache-tflm
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         env:
           cache-name: cache-tflm
         with:
