@@ -26,7 +26,7 @@
 The purpose of this project is to make a custom micropython firmware that installs tensorflow lite for micro controllers
 and allows for experimentation.
 
-## Architecture
+## Architectur
 
 This project is a micropython module built using the USER_C_MODULES extension mechanism.  There are several modules:
 * microlite
